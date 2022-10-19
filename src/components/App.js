@@ -15,7 +15,7 @@ const App = () => {
           opportunities.
         </h1>
       </div>
-      <button id="toggle" onclick={()=>setStatus(!status)}>Toggle</button>
+      <button id="toggle" onclick={()=>setStatus("about-div")}>Toggle</button>
     </div>
   );
 };
