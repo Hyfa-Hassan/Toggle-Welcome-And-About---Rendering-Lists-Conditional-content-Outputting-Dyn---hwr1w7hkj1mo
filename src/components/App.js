@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/App.css";
 
 const App = () => {
+  const [status,setStatus] = useState("welcome-div");
   return (
     <div id="main">
       <div id="welcome-div">
@@ -14,7 +15,7 @@ const App = () => {
           opportunities.
         </h1>
       </div>
-      <button id="toggle">Toggle</button>
+      <button id="toggle" onclick={()=>setStatus(!status)}>Toggle</button>
     </div>
   );
 };
